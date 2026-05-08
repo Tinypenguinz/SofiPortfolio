@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="piece-page">
+  <div class="piece-details piece-details--full">
+    <p class="about-eyebrow">{{ .Params.medium }}</p>
+    <h1 class="piece-title">{{ .Title }}</h1>
+    {{ with .Params.year }}<p class="piece-meta">{{ . }}</p>{{ end }}
+    <div class="piece-body">{{ .Content }}</div>
+    <a class="piece-back" href="{{ "/work/" | relURL }}">← Back to work</a>
+  </div>
+  <div class="piece-images">
+    {{ range .Params.images }}
+    <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ end }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,5 @@
+name = "Sofi"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A theme for my darling"
+min_version = "0.110.0"

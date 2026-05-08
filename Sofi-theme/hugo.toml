@@ -1,0 +1,49 @@
+baseURL = "https://TinyPenguinz.github.io/Sofi-Portfolio/"
+defaultContentLanguage = "en"
+theme = "Sofi"
+heroImage = "/images/hero.jpg"
+aboutImage = "/images/thumb/about.jpg"
+[languages]
+ [languages.en]
+  languageName = "🇬🇧"
+  languageCode = "en-gb"
+  title = "Sofi Alcock-Garrido"
+  weight = 1
+  [languages.en.params]
+  tagline = "Spanish, Scottish Illustrator"
+  heroHeadline = "Lorem Ipsum"
+  heroSub = "Lorem ipsum domer"
+  aboutIntro = "Hello, I'm Sofi ✿"
+  aboutBody = "I'm a scottish, spanish painter and illustrator...."
+  contactTagline = "Commission enquiries, print orders, or just a friendly hello — I'd love to hear from you."
+  contactEmail = "hello@sofiemail.com"
+  footerName = "Sofi Alcock-Garrido"
+  
+ [languages.es]
+  languageName = "🇪🇸"
+  languageCode = "es"
+  title = "Sofi Alcock-Garrido"
+  weight = 2
+  [languages.es.params]
+  tagline = "Spanish, Scottish Illustrator... in spanish"
+  heroHeadline = "Lorem Ipsum (spanish)"
+  heroSub = "Lorem ipsum domer (spanisg)"
+  aboutIntro = "Hola, soy Sofi ✿"
+  aboutBody = "Soy pintora y illustadora de escosses y españa"
+  contactTagline = "Commission enquiries, print orders, or just a friendly hello — I'd love to hear from you."
+  contactEmail = "hello@sofiemail.com"
+  footerName = "Sofi Alcock-Garrido"
+
+[menu]
+  [[menu.main]]
+    name = "Work"
+    url = "/work/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 3

@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">{{ .Site.Params.tagline }}</p>
+    <h1 class="hero-title">{{ .Site.Params.heroHeadline }}</h1>
+    <p class="hero-sub">{{ .Site.Params.heroSub }}</p>
+
+  </div>
+  <div class="hero-img">
+    {{/* Replace the div below with an <img> tag once you have a hero photo */}}
+ <img src="{{ "images/hero.jpg" | relURL }}" alt="A portrait of {{ .Site.Title }}"> 
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="section-header">
+    <h2 class="section-title">Recent work</h2>
+    <a class="section-link" href="{{ "/work/" | relURL }}">View all →</a>
+  </div>
+  <div class="gallery-grid">
+    {{/* Pulls the 3 most recent pieces from content/work/ */}}
+    {{ range first 3 (where .Site.RegularPages "Section" "work") }}
+    <div class="gallery-item">
+      <a href="{{ .RelPermalink }}" class="gallery-thumb-link">
+<div class="gallery-thumb" style="{{ with .Params.colour }}background: {{ . }};{{ end }}">
+  {{ with .Params.thumbnail }}
+  <img src="{{ . }}" alt="{{ $.Title }}">
+  {{ end }}
+</div>
+      </a>
+      <div class="gallery-label">
+        <strong>{{ .Title }}</strong>
+        {{ with .Params.medium }}{{ . }}{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-img">
+    <img src="/Sofi-Portfolio/images/thumb/about.jpg" alt="{{ .Site.Title }}">
+  </div>
+  <div class="about-text">
+    <p class="about-eyebrow">About me</p>
+    <h2 class="about-title">{{ .Site.Params.aboutIntro }}</h2>
+    <p class="about-body">{{ .Site.Params.aboutBody }}</p>
+  </div>
+</section>
+
+{{ end }}

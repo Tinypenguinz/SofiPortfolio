@@ -1,0 +1,15 @@
+<nav>
+  <a class="nav-logo" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+    <div class="lang-switcher">
+      {{ range .Translations }}
+      <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </div>
+  </div>
+</nav>

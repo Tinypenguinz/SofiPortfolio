@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section class="about-section about-section--full">
+  <div class="about-img">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Site.Title }}">
+    {{ else }}
+    <div class="about-img-inner"></div>
+    {{ end }}
+  </div>
+  <div class="about-text">
+    <p class="about-eyebrow">About me</p>
+    <h1 class="about-title">{{ .Title }}</h1>
+    <div class="about-body">{{ .Content }}</div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="gallery-section gallery-section--full">
+  <div class="section-header">
+    <h1 class="section-title">Work</h1>
+  </div>
+  <div class="gallery-grid gallery-grid--large">
+    {{ range (where .Site.RegularPages "Section" "work") }}
+    <div class="gallery-item">
+      <a href="{{ .RelPermalink }}" class="gallery-thumb-link">
+        <div class="gallery-thumb" style="{{ with .Params.colour }}background: {{ . }};{{ end }}">
+          {{ with .Params.thumbnail }}
+          <img src="{{ . }}" alt="{{ $.Title }}">
+          {{ end }}
+        </div>
+      </a>
+      <div class="gallery-label">
+        <strong>{{ .Title }}</strong>
+        {{ with .Params.year }}{{ . }}{{ end }}
+        {{ with .Params.medium }}<span class="gallery-desc">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="contact-section">
+  <div class="contact-inner">
+    <h1 class="contact-title">{{ .Title }}</h1>
+    <p class="contact-sub">{{ .Site.Params.contactTagline }}</p>
+
+    {{/*
+      Hugo is static — forms need a third-party service to actually send mail.
+      Formspree is free and easy: sign up at formspree.io, get your form ID,
+      then replace YOUR_FORM_ID below.
+    */}}
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <textarea name="message" placeholder="Your message…" required></textarea>
+      <button class="submit-btn" type="submit">Send message</button>
+    </form>
+
+    <p class="contact-alt">Or email directly: <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a></p>
+  </div>
+</section>
+
+{{ end }}
