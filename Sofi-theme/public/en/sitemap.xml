@@ -42,6 +42,8 @@
                 href="http://localhost:1313/Sofi-Portfolio/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/Sofi-Portfolio/commissions/</loc>
+  </url><url>
     <loc>http://localhost:1313/Sofi-Portfolio/about/</loc>
   </url><url>
     <loc>http://localhost:1313/Sofi-Portfolio/resume/</loc>

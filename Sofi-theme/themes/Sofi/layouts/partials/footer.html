@@ -1,4 +1,12 @@
 <footer>
   <span class="footer-name">{{ .Site.Params.footerName }}</span>
-  <span class="footer-copy">© {{ now.Year }} — all rights reserved</span>
+  <div class="footer-links">
+    <a href="https://instagram.com/smag_art2711" target="_blank" aria-label="Instagram">
+      <img src="/Sofi-Portfolio/images/icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="mailto:{{ .Site.Params.contactEmail }}" aria-label="Email">
+      <img src="/Sofi-Portfolio/images/icons/email.svg" alt="Email">
+    </a>
+  </div>
+  <span class="footer-copy">© {{ now.Year }} — all rights reserved, Website Design - <a href="https://example.com" target="_blank">Archie Norman</a></span>
 </footer>

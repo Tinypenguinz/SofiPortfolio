@@ -44,6 +44,11 @@ aboutImage = "/images/thumb/about.jpg"
     url = "/about/"
     weight = 2
   [[menu.main]]
-    name = "Resume"
+    name = "Résumé"
     url = "/resume/"
     weight = 3
+  [[menu.main]]
+    name = "Commissions"
+    url = "/commissions/"
+    weight = 4
+    
