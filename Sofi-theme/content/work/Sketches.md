@@ -1,6 +1,6 @@
 ---
 title: "Sketches"
-date: 2026-05-08
+date: 2001-01-01
 draft: false
 thumbnail: "/Sofi-Portfolio/images/thumb/Sketches.png"
 medium: "Mixed media"

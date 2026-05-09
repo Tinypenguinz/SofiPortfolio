@@ -1,6 +1,6 @@
 ---
 title: "Assorted Works"
-date: 2026-05-08
+date: 2000-01-01
 draft: false
 thumbnail: "/Sofi-Portfolio/images/thumb/AssortWorks.jpg"
 medium: "Mixed media"
