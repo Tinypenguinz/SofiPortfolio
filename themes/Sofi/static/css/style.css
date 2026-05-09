@@ -170,7 +170,6 @@ nav {
   margin-bottom: 1.75rem;
   border-bottom: 1px solid var(--rose-light);
   padding-bottom: 2rem;
-  
 }
 .section-title {
   font-family: 'Playfair Display', serif;
@@ -190,8 +189,13 @@ nav {
   gap: 1rem;
 }
 .gallery-grid--large {
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
+}
+.gallery-grid--large .gallery-item {
+  flex: 0 0 calc(25% - 1.5rem);
 }
 .gallery-thumb-link { text-decoration: none; display: block; }
 .gallery-item { display: flex; flex-direction: column; gap: 0.8rem; }
