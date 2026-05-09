@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello, I&#39;m Sofi ✿ on Sofi Alcock-Garrido</title>
-    <link>http://localhost:1313/Sofi-Portfolio/about/</link>
-    <description>Recent content in Hello, I&#39;m Sofi ✿ on Sofi Alcock-Garrido</description>
+    <title>Hello, I&#39;m Sofi ✿ on </title>
+    <link>//localhost:1313/about/</link>
+    <description>Recent content in Hello, I&#39;m Sofi ✿ on </description>
     <generator>Hugo</generator>
-    <language>en-gb</language>
-    <atom:link href="http://localhost:1313/Sofi-Portfolio/about/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="//localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
