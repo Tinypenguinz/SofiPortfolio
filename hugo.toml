@@ -1,4 +1,4 @@
-baseURL = "https://TinyPenguinz.github.io/Sofi-Portfolio/"
+baseURL = "https://TinyPenguinz.github.io/SofiPortfolio/"
 defaultContentLanguage = "en"
 theme = "Sofi"
 heroImage = "/images/hero.jpg"
