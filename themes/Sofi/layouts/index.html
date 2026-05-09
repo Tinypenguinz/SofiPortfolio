@@ -7,14 +7,14 @@
     <p class="hero-credentials">BSc Painting & Printmaking, ECA<br>MLitt Contemporary Art Practice, GSA</p>
   </div>
   <div class="hero-img">
-    <img src="/Sofi-Portfolio/images/hero.jpg" alt="{{ .Site.Title }}">
+    <img src="{{ "/images/hero.jpg" | relURL }}" alt="{{ .Site.Title }}">
   </div>
 </section>
 
 <section class="gallery-section">
   <div class="section-header">
     <h2 class="section-title">Recent work</h2>
-      <a class="section-link" href="/Sofi-Portfolio/work/">View all →</a>
+      <a class="section-link" href="{{ "/work/" | relURL }}">View all →</a>
   </div>
   <div class="gallery-grid">
     {{/* Pulls the 3 most recent pieces from content/work/ */}}
@@ -38,7 +38,7 @@
 
 <section class="about-section">
   <div class="about-img">
-    <img src="/Sofi-Portfolio/images/thumb/about.jpg" alt="{{ .Site.Title }}">
+    <img src="{{ "/images/thumb/about.jpg" | relURL }}" alt="{{ .Site.Title }}">
   </div>
   <div class="about-text">
     <p class="about-eyebrow">About me</p>
