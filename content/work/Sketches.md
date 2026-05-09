@@ -2,7 +2,7 @@
 title: "Sketches"
 date: 2001-01-01
 draft: false
-thumbnail: "/Sofi-Portfolio/images/thumb/Sketches.png"
+thumbnail: "/images/thumb/Sketches.png"
 medium: "Mixed media"
 year: "2020-2026"
 description: "aa"
