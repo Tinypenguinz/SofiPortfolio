@@ -9,7 +9,7 @@
       <a href="{{ .RelPermalink }}" class="gallery-thumb-link">
         <div class="gallery-thumb" style="{{ with .Params.colour }}background: {{ . }};{{ end }}">
           {{ with .Params.thumbnail }}
-          <img src="{{ . }}" alt="{{ $.Title }}">
+          <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}">
           {{ end }}
         </div>
       </a>

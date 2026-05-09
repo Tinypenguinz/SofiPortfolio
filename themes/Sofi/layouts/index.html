@@ -7,7 +7,7 @@
     <p class="hero-credentials">BSc Painting & Printmaking, ECA<br>MLitt Contemporary Art Practice, GSA</p>
   </div>
   <div class="hero-img">
-    <img src="{{ "/images/hero.jpg" | relURL }}" alt="{{ .Site.Title }}">
+    <img src="{{ $.Site.BaseURL }}images/hero.jpg" alt="{{ .Site.Title }}">
   </div>
 </section>
 
@@ -23,7 +23,7 @@
       <a href="{{ .RelPermalink }}" class="gallery-thumb-link">
 <div class="gallery-thumb" style="{{ with .Params.colour }}background: {{ . }};{{ end }}">
   {{ with .Params.thumbnail }}
-  <img src="{{ . }}" alt="{{ $.Title }}">
+  <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}">
   {{ end }}
 </div>
       </a>
@@ -38,7 +38,7 @@
 
 <section class="about-section">
   <div class="about-img">
-    <img src="{{ "/images/thumb/about.jpg" | relURL }}" alt="{{ .Site.Title }}">
+    <img src="{{ $.Site.BaseURL }}images/thumb/about.jpg" alt="{{ .Site.Title }}">
   </div>
   <div class="about-text">
     <p class="about-eyebrow">About me</p>

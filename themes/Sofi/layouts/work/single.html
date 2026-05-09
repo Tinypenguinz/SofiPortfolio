@@ -9,7 +9,7 @@
   </div>
   <div class="piece-images">
     {{ range .Params.images }}
-    <img src="{{ . }}" alt="{{ $.Title }}">
+    <img src="{{ $.Site.BaseURL }}{{ strings.TrimPrefix "/" . }}" alt="{{ $.Title }}">
     {{ end }}
   </div>
 </article>
